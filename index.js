@@ -1,24 +1,25 @@
 const express = require("express");
-const app = express();
 const cors = require("cors");
+const app = express();
 const puerto = 2006;
 
-const { comics } = require("./comics.js");
+const { getComics, getComicById } = require("./comics.controllers");
 
 app.use(cors());
 
+// Ruta para obtener todos los cómics
 app.get("/", (req, res) => {
-  res.json(comics);
+  console.log("Petición para obtener todos los cómics");
+  getComics(req, res);
 });
 
+// Ruta para obtener un cómic por ID
 app.get("/:id", (req, res) => {
-  const comic = comics.find(c => c.id === parseInt(req.params.id));
-  if (!comic) {
-    return res.status(404).send("Cómic no encontrado");
-  }
-  res.json(comic);
+  console.log(`Petición para obtener el cómic con ID: ${req.params.id}`);
+  getComicById(req, res);
 });
 
+// Inicializar el servidor
 app.listen(puerto, () => {
   console.log(`Servidor corriendo en el puerto ${puerto}`);
 });
