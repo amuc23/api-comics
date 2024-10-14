@@ -32,7 +32,7 @@ const comics = [
     "titulo": "Doctor Strange",
     "autor": "Steve Ditko",
     "anio": 1963,
-    "imagen": "https://static.wikia.nocookie.net/marveldatabase/images/6/63/Dr._Strange_Vol_1_1.jpg/revision/latest?cb=20191204233552"
+    "imagen": "https://i.pinimg.com/originals/4a/b5/42/4ab542eb9d2f29d02b620d111550bb0b.jpg"
   },
   {
     "id": 6,
