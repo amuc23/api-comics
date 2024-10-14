@@ -5,6 +5,7 @@ const puerto = 2006;
 
 const { getComics, getComicById } = require("./comics.controllers");
 
+
 app.use(cors());
 
 // Ruta para obtener todos los cómics
