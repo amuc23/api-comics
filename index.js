@@ -3,7 +3,8 @@ const cors = require("cors");
 const app = express();
 const puerto = 2006;
 
-const { getComics, getComicById } = require("./comics.controllers");
+const { getComics, getComicById } = require("./controllers/comics.controllers");
+
 
 
 app.use(cors());
