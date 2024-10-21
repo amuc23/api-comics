@@ -20,6 +20,6 @@ app.get("/:id", (req, res) => {
 });
 
 app.listen(puerto, () => {
-  console.log(`Servidor corriendo en el puerto ${puerto}`);
+  console.log(`Servidor corriendo en el puerzto ${puerto}`);
 });
 
